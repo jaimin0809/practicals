@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@mipmap/img"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@mipmap/login"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#652196F3"
+        app:contentPadding="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+
+           <EditText
+               android:id="@+id/editTextText"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:drawableLeft="@drawable/baseline_email_24"
+               android:drawablePadding="5dp"
+               android:ems="10"
+               android:hint="Enter Email"
+               android:inputType="text"
+               />
+
+           <EditText
+               android:id="@+id/editTextTextPassword"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:ems="10"
+               android:textColorHint="@color/purple_200"
+               android:hint="Enter Password"
+               android:inputType="textPassword" />
+
+           <Button
+               android:id="@+id/button"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="LOGIN" />
+
+           <TextView
+               android:id="@+id/textView3"
+               android:gravity="end"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Dont have account? Sign up" />
+       </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
